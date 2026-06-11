@@ -8,3 +8,24 @@ function entrar() {
 
     document.getElementById("videoSurpresa").play();
 }
+function criarCoracao() {
+
+    const coracao = document.createElement("div");
+
+    coracao.classList.add("heart");
+
+    coracao.innerHTML = "❤️";
+
+    coracao.style.left = Math.random() * 100 + "vw";
+
+    coracao.style.fontSize =
+        Math.random() * 20 + 15 + "px";
+
+    document.body.appendChild(coracao);
+
+    setTimeout(() => {
+        coracao.remove();
+    }, 8000);
+}
+
+setInterval(criarCoracao, 300);
