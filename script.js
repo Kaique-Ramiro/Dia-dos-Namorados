@@ -30,12 +30,13 @@ function criarCoracao() {
     if (coracao.innerHTML === "K + J") {
         coracao.style.fontWeight = "bold";
         coracao.style.fontSize = "28px";
-    }
-
-    coracao.style.left = Math.random() * 100 + "vw";
-
+    }else {
     coracao.style.fontSize =
         Math.random() * 20 + 15 + "px";
+    }
+    
+
+    coracao.style.left = Math.random() * 100 + "vw";
 
     document.body.appendChild(coracao);
 
