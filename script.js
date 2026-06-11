@@ -18,16 +18,16 @@ function criarCoracao() {
         "❤️",
         "❤️",
         "❤️",
-        "K + J",
+        "K & J",
         "❤️",
         "❤️",
-        "K + J"
+        "K & J"
     ];
 
     coracao.innerHTML =
         simbolos[Math.floor(Math.random() * simbolos.length)];
 
-    if (coracao.innerHTML === "K + J") {
+    if (coracao.innerHTML === "K & J") {
         coracao.style.fontWeight = "bold";
         coracao.style.fontSize = "28px";
     }else {
