@@ -14,7 +14,23 @@ function criarCoracao() {
 
     coracao.classList.add("heart");
 
-    coracao.innerHTML = "❤️";
+    const simbolos = [
+        "❤️",
+        "❤️",
+        "❤️",
+        "K + J",
+        "❤️",
+        "❤️",
+        "K + J"
+    ];
+
+    coracao.innerHTML =
+        simbolos[Math.floor(Math.random() * simbolos.length)];
+
+    if (coracao.innerHTML === "K + J") {
+        coracao.style.fontWeight = "bold";
+        coracao.style.fontSize = "28px";
+    }
 
     coracao.style.left = Math.random() * 100 + "vw";
 
