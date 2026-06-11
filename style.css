@@ -24,7 +24,7 @@ body {
 
 .card {
     background: rgba(255,255,255,0.15);
-    padding: 25px;
+    padding: 15px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
 }
@@ -58,7 +58,13 @@ h1 {
 .video {
     width: 95%;
     max-width: 500px;
-    max-height: 55vh;
+    max-height: 50vh;
     border-radius: 15px;
-    margin-top: 15px;
+}
+h2 {
+    margin: 5px 0;
+}
+
+p {
+    margin: 5px 0;
 }
