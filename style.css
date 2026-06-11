@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    overflow: hidden;
+    height: 100vh;
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #ff758c, #ff7eb3);
     display: flex;
@@ -10,6 +12,11 @@ body {
 }
 
 .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 90%;
     max-width: 600px;
@@ -48,15 +55,10 @@ h1 {
 }#galeria {
     margin-top: 20px;
 }
-
-.foto {
-    width: 250px;
-    border-radius: 15px;
-    margin: 10px;
-}
-
 .video {
-    width: 300px;
+    width: 90%;
+    max-width: 320px;
+    max-height: 40vh;
     border-radius: 15px;
     margin-top: 15px;
 }
