@@ -36,7 +36,7 @@ function criarCoracao() {
     }
     
 
-    coracao.style.left = Math.random() * 100 + "vw";
+    coracao.style.left = Math.random() * window.innerWidth + "px";
 
     document.body.appendChild(coracao);
 
