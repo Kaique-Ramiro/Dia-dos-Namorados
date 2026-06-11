@@ -14,21 +14,9 @@ function criarCoracao() {
 
     coracao.classList.add("heart");
 
-    const simbolos = [
-        "❤️",
-        "❤️",
-        "❤️",
-        "K + J",
-        "❤️",
-        "❤️",
-        "K + J"
-    ];
+    coracao.innerHTML = "❤️";
 
-    coracao.innerHTML =
-        simbolos[Math.floor(Math.random() * simbolos.length)];
-
-    coracao.style.left =
-        Math.random() * window.innerWidth + "px";
+    coracao.style.left = Math.random() * 100 + "vw";
 
     coracao.style.fontSize =
         Math.random() * 20 + 15 + "px";
@@ -39,3 +27,5 @@ function criarCoracao() {
         coracao.remove();
     }, 8000);
 }
+
+setInterval(criarCoracao, 300);
