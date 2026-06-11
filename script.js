@@ -1,5 +1,7 @@
 function entrar() {
 
+    clearInterval(chuvaCoracoes);
+
     document.getElementById("tela1").style.display = "none";
 
     document.getElementById("tela2").style.display = "block";
@@ -7,6 +9,7 @@ function entrar() {
     document.getElementById("musica").play();
 
     document.getElementById("videoSurpresa").play();
+    
 }
 function criarCoracao() {
 
@@ -45,4 +48,4 @@ function criarCoracao() {
     }, 8000);
 }
 
-setInterval(criarCoracao, 300);
+const chuvaCoracoes = setInterval(criarCoracao, 300);
