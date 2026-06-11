@@ -15,19 +15,20 @@ function criarCoracao() {
     coracao.classList.add("heart");
 
     const simbolos = [
-    "❤️",
-    "❤️",
-    "❤️",
-    "K + J",
-    "❤️",
-    "❤️",
-    "K + J"
-];
+        "❤️",
+        "❤️",
+        "❤️",
+        "K + J",
+        "❤️",
+        "❤️",
+        "K + J"
+    ];
 
-coracao.innerHTML =
-    simbolos[Math.floor(Math.random() * simbolos.length)];
+    coracao.innerHTML =
+        simbolos[Math.floor(Math.random() * simbolos.length)];
 
-    coracao.style.left = Math.random() * 100 + "vw";
+    coracao.style.left =
+        Math.random() * window.innerWidth + "px";
 
     coracao.style.fontSize =
         Math.random() * 20 + 15 + "px";
@@ -38,5 +39,3 @@ coracao.innerHTML =
         coracao.remove();
     }, 8000);
 }
-
-setInterval(criarCoracao, 300);
