@@ -72,21 +72,22 @@ p {
 }
 .heart {
     position: fixed;
-    top: -10px;
+    top: -50px;
     color: pink;
     font-size: 20px;
-    animation: cair 8s linear infinite;
-    z-index: 0;
+    animation: cair 8s linear forwards;
+    pointer-events: none;
+    z-index: 999;
 }
 
 @keyframes cair {
-    0% {
-        transform: translateY(-10vh);
+    from {
+        transform: translateY(-50px);
         opacity: 1;
     }
 
-    100% {
-        transform: translateY(110vh);
+    to {
+        transform: translateY(calc(100vh + 100px));
         opacity: 0;
     }
 }
