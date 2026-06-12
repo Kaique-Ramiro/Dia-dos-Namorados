@@ -1,5 +1,16 @@
 function entrar() {
 
+    const senha = document.getElementById("senha").value;
+
+    // coloque aqui a data de namoro
+    const senhaCorreta = "250226";
+
+    if (senha !== senhaCorreta) {
+        document.getElementById("erro").innerHTML =
+            "💔 Senha incorreta, tente novamente!";
+        return;
+    }
+
     clearInterval(chuvaCoracoes);
 
     document.getElementById("tela1").style.display = "none";
@@ -9,7 +20,6 @@ function entrar() {
     document.getElementById("musica").play();
 
     document.getElementById("videoSurpresa").play();
-    
 }
 function criarCoracao() {
 
