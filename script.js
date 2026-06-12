@@ -2,7 +2,7 @@ function entrar() {
 
     const senha = document.getElementById("senha").value;
 
-    // coloque aqui a data de namoro
+    
     const senhaCorreta = "250226";
 
     if (senha !== senhaCorreta) {
